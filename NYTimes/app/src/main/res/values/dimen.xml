@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="txt_header_size">20sp</dimen>
+    <dimen name="txt_byline_size">14sp</dimen>
+    <dimen name="txt_date_size">14sp</dimen>
+
+    <dimen name="margin_3_dp">3dp</dimen>
+    <dimen name="margin_5_dp">5dp</dimen>
+    <dimen name="margin_10_dp">10dp</dimen>
+    <dimen name="margin_20_dp">20dp</dimen>
+    <dimen name="margin_30_dp">30dp</dimen>
+    <dimen name="margin_40_dp">40dp</dimen>
+    <dimen name="margin_50_dp">50dp</dimen>
+    <dimen name="margin_60_dp">60dp</dimen>
+
+    <dimen name="margin_80_dp">80dp</dimen>
+</resources>

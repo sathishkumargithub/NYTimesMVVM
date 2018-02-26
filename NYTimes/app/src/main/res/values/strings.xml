@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NYTimes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+    <string name="txt_key_result">results</string>
+    <string name="txt_key_title">title</string>
+    <string name="txt_key_byline">byline</string>
+    <string name="txt_key_published_date">published_date</string>
+    <string name="txt_key_url">url</string>
+    <string name="txt_key_media">media</string>
+    <string name="txt_key_media_metadata">media-metadata</string>
+
+    <string name="txt_loading">loading..</string>
+    <string name="txt_listfragment">listfragment</string>
+    <string name="txt_detailfragment">detailfragment</string>
+</resources>

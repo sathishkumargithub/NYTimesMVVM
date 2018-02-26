@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="article"
+            type="com.android.nytimes.model.Artical" />
+
+        <variable
+            name="clickevent"
+            type="com.android.nytimes.view.callback.ListItemClickCallBack" />
+
+
+    </data>
+
+
+    <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/article_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20_dp"
+        android:layout_marginRight="@dimen/margin_20_dp"
+        android:layout_marginTop="@dimen/margin_20_dp"
+        app:cardCornerRadius="@dimen/margin_3_dp"
+        app:cardElevation="@dimen/margin_3_dp">
+
+        <LinearLayout
+            android:id="@+id/article_item_view"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> clickevent.onItemClick(article.url)}">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10_dp">
+
+            <ImageView
+                android:id="@+id/articalimage"
+                android:layout_width="@dimen/margin_80_dp"
+                android:layout_height="@dimen/margin_80_dp"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/margin_5_dp"
+                app:imageUrl="@{article.imageurl}" />
+
+            <TextView
+                android:id="@+id/mTvArticalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/margin_10_dp"
+                android:layout_toRightOf="@+id/articalimage"
+                android:text="@{article.title}"
+                android:textSize="@dimen/txt_header_size"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+            <LinearLayout
+                android:layout_marginBottom="@dimen/margin_5_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mTvArticalName"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mTvByline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/margin_5_dp"
+                    android:text="@{article.author}"
+                    android:textSize="@dimen/txt_byline_size" />
+
+                <TextView
+                    android:id="@+id/mTvPublishedDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5_dp"
+                    android:layout_weight="3"
+                    android:text="@{article.published_date}"
+                    android:textSize="@dimen/txt_date_size" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</layout>
