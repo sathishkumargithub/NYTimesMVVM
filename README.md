@@ -5,8 +5,8 @@
 NYtimes application shows a list of NYTimes most viewed articles. Tapping on the article in a list show a detailed view of the particular 
 article.  
 * A main activity that handles navigation between articlelistfragment and articledetailfragment.
-* A articlelistfragment to display the list of products.
-* A articledetailfragment to display a product review.
+* A articlelistfragment to display the list of articles.
+* A articledetailfragment to display article details.
 
  Architechture components used in this application are:
 1) ViewModel
